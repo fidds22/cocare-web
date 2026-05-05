@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "login": "Iniciar sesion",
+    "openApp": "Abrir app",
+    "openMenu": "Abrir menu",
+    "menu": "Menu",
+    "sectionsAria": "Navegacion de secciones",
+    "switchLanguage": "Cambiar idioma",
+    "switchTo": "Cambiar a {locale}",
+    "sections": {
+      "home": "Inicio",
+      "problem": "Problema",
+      "howItWorks": "Como funciona",
+      "features": "Funciones",
+      "testimonials": "Testimonios",
+      "faq": "Preguntas",
+      "contact": "Contacto"
+    }
+  },
+  "hero": {
+    "badge": "Para familias que co-cuidan",
+    "headlinePrefix": "Todo lo que importa de quienes cuidas,",
+    "headlineHighlight": "en un solo lugar",
+    "subheading": "Calendario compartido, mensajes, citas medicas, escuela y documentos. Sin cambiar de app.",
+    "primaryCta": "Unete a la lista de espera",
+    "secondaryCta": "Como funciona",
+    "imageAlt": "Familia coordinando el cuidado juntos"
+  },
+  "problem": {
+    "titlePrefix": "Demasiadas apps,",
+    "titleHighlight": "poca claridad",
+    "description": "Mensajes en un lado, calendario en otro, la escuela en su portal y el medico en otro mas. La informacion se pierde y nadie tiene la foto completa.",
+    "items": {
+      "messages": "Chats y correos dispersos entre cuidadores",
+      "calendar": "Citas y recordatorios en varias apps",
+      "documents": "Documentos y permisos en distintos sitios",
+      "healthSchool": "Sin un solo lugar para la salud y la escuela"
+    }
+  },
+  "solution": {
+    "titlePrefix": "Un solo lugar para",
+    "titleHighlight": "coordinar el cuidado",
+    "description": "coCare es un hub por persona o familia: calendario compartido, mensajeria, tareas, documentos y salud en una sola app. Pensado para colaborar, no para pelear.",
+    "items": {
+      "family": {
+        "title": "Por persona o familia",
+        "description": "Todo lo de quien cuidas, o de tu familia, en un mismo espacio."
+      },
+      "aligned": {
+        "title": "Todos al tanto",
+        "description": "Cuidadores y familia con la misma informacion y sin duplicar esfuerzos."
+      },
+      "singleApp": {
+        "title": "Sin cambiar de app",
+        "description": "Mensajes, calendario, citas y documentos en coCare."
+      }
+    }
+  },
+  "appPreview": {
+    "titlePrefix": "Asi funciona",
+    "titleHighlight": "coCare",
+    "description": "Todo lo que necesitas en un solo lugar. Disponible en todos tus dispositivos.",
+    "devices": {
+      "mobile": "Movil",
+      "tablet": "Tablet",
+      "desktop": "Desktop"
+    },
+    "tabs": {
+      "calendar": "Calendario",
+      "messages": "Mensajes",
+      "expenses": "Gastos",
+      "profile": "Perfil"
+    },
+    "screens": {
+      "messages": {
+        "one": "Hola, puedo recoger a Lucas hoy a las 3?",
+        "two": "Si, perfecto. Sale a las 15:15 por la puerta principal.",
+        "three": "Genial. Le llevo la mochila de natacion?",
+        "four": "Por favor, tiene clase manana a las 9."
+      },
+      "expenses": {
+        "month": "Febrero 2026",
+        "balance": "Balance: $125.00",
+        "owed": "Papa debe a Mama",
+        "split": "Pago: Mama · 50/50",
+        "items": {
+          "uniform": "Uniforme escolar",
+          "swimming": "Clase de natacion",
+          "supplies": "Material escolar"
+        }
+      },
+      "profile": {
+        "age": "6 anos",
+        "cards": {
+          "school": {
+            "label": "Escuela",
+            "value": "Colegio San Martin",
+            "detail": "1ro primaria · Turno manana"
+          },
+          "allergies": {
+            "label": "Alergias",
+            "value": "Polvo, frutos secos",
+            "detail": "EpiPen en mochila escolar"
+          },
+          "emergency": {
+            "label": "Contacto emergencia",
+            "value": "Abuela Maria",
+            "detail": "+52 55 1234 5678"
+          }
+        }
+      },
+      "calendar": {
+        "month": "Febrero 2026",
+        "pickup": "Recoger a Lucas del cole",
+        "time": "Hoy · 15:30",
+        "appointment": "Cita pediatra",
+        "appointmentTime": "Sab 8 · 10:00"
+      }
+    }
+  },
+  "features": {
+    "titlePrefix": "Todo lo que necesitas en",
+    "titleHighlight": "coCare",
+    "description": "Pensado para familias separadas, cuidadores de mayores y quienes coordinan el cuidado de varias personas.",
+    "items": {
+      "calendar": {
+        "title": "Calendario compartido",
+        "description": "Eventos, citas y recordatorios en un solo calendario para toda la familia o el equipo de cuidado."
+      },
+      "messages": {
+        "title": "Mensajeria familiar",
+        "description": "Hilos por tema o por persona, con todo el contexto en un mismo lugar."
+      },
+      "profiles": {
+        "title": "Perfiles y salud",
+        "description": "Informacion de salud, escuela, contactos de emergencia y documentos en un perfil por persona."
+      },
+      "documents": {
+        "title": "Documentos en un solo lugar",
+        "description": "Permisos, reportes, recetas y papeles importantes organizados y accesibles para quien deba verlos."
+      }
+    }
+  },
+  "stats": {
+    "families": "Familias en lista de espera",
+    "setup": "Para configurar tu familia",
+    "private": "Privado y seguro",
+    "app": "Para todo el cuidado"
+  },
+  "photos": {
+    "aria": "Galeria de familias",
+    "alts": {
+      "homework": "Padre ayudando a su hijo con la tarea",
+      "grandparent": "Abuela con su nieto sonriendo",
+      "family": "Familia compartiendo un momento juntos"
+    }
+  },
+  "testimonials": {
+    "titlePrefix": "Familias que ya",
+    "titleHighlight": "confian en coCare",
+    "description": "Historias reales de quienes estan transformando la forma de coordinar el cuidado.",
+    "items": {
+      "mariana": {
+        "quote": "Por fin mi ex y yo tenemos la misma informacion sobre las citas del pediatra. Ya no hay excusas de 'no sabia'.",
+        "name": "Mariana R.",
+        "role": "Mama separada, 2 hijos"
+      },
+      "carmen": {
+        "quote": "Como abuela, solo quiero saber cuando me toca recogerlos y si tienen tarea. coCare me lo pone facil.",
+        "name": "Dona Carmen",
+        "role": "Abuela y cuidadora"
+      },
+      "lucia": {
+        "quote": "Cuido a tres ninos de diferentes familias. Tener todo en un solo lugar me ahorra horas cada semana.",
+        "name": "Lucia G.",
+        "role": "Ninera profesional"
+      }
+    }
+  },
+  "faq": {
+    "titlePrefix": "Preguntas",
+    "titleHighlight": "frecuentes",
+    "description": "Todo lo que necesitas saber sobre coCare.",
+    "items": {
+      "pricing": {
+        "question": "Es coCare gratis?",
+        "answer": "Estamos en fase beta. Los primeros usuarios de la lista de espera tendran acceso gratuito al lanzamiento y descuentos especiales en los planes de pago."
+      },
+      "privacy": {
+        "question": "Quien puede ver la informacion de mi familia?",
+        "answer": "Solo las personas que tu invites. Cada cuidador ve unicamente lo que tu decides compartir. Tu informacion nunca se vende ni se comparte con terceros."
+      },
+      "separated": {
+        "question": "Funciona para familias separadas o divorciadas?",
+        "answer": "Si, coCare esta disenado especificamente para familias donde varios cuidadores necesitan coordinarse: padres separados, abuelos, nineras y cualquier persona involucrada en el cuidado."
+      },
+      "elderCare": {
+        "question": "Puedo usarlo para coordinar el cuidado de un adulto mayor?",
+        "answer": "Absolutamente. coCare funciona para coordinar el cuidado de cualquier persona: ninos, adultos mayores o cualquier familiar que necesite atencion de varios cuidadores."
+      },
+      "devices": {
+        "question": "En que dispositivos funciona?",
+        "answer": "coCare estara disponible como app para iOS y Android, ademas de una version web accesible desde cualquier navegador."
+      },
+      "launch": {
+        "question": "Cuando se lanza coCare?",
+        "answer": "Estamos trabajando en el lanzamiento para 2026. Unete a la lista de espera para ser de los primeros en probarlo y recibir novedades."
+      }
+    }
+  },
+  "cta": {
+    "titlePrefix": "Unete a la",
+    "titleHighlight": "lista de espera",
+    "description": "Te avisamos cuando coCare este disponible. Sin spam.",
+    "privacy": "Tu informacion esta segura. No compartimos tus datos."
+  },
+  "waitlistForm": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "submit": "Unirme a la lista",
+    "submitting": "Enviando...",
+    "success": "Gracias. Te avisaremos cuando coCare este disponible.",
+    "validation": {
+      "name": "Escribe al menos 2 caracteres",
+      "email": "Email no valido"
+    }
+  },
+  "footer": {
+    "tagline": "Todo en un solo lugar para quienes cuidas."
+  }
+}

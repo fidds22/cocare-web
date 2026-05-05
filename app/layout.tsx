@@ -1,5 +1,16 @@
-export const metadata = {
-  title: 'coCare - Landing',
+import type { Metadata } from "next";
+import { Geist } from "next/font/google";
+import "./globals.css";
+
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
+export const metadata: Metadata = {
+  title: "coCare",
+  description:
+    "Family coordination for shared calendars, messages, documents, and care details.",
 };
 
 export default function RootLayout({
@@ -9,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={geist.variable}>{children}</body>
     </html>
   );
 }

@@ -1,22 +1,172 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
 }
 
-html {
-  scroll-behavior: smooth;
+:root {
+  --motion-duration-fast: 120ms;
+  --motion-duration-interactive: 150ms;
+  --motion-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --radius: 0.625rem;
+  --background: oklch(0.985 0.006 75);
+  --foreground: oklch(0.16 0.015 260);
+  --card: oklch(1 0.004 75);
+  --card-foreground: oklch(0.16 0.015 260);
+  --popover: oklch(1 0.002 85);
+  --popover-foreground: oklch(0.16 0.015 260);
+  --primary: oklch(0.45 0.12 178);
+  --primary-foreground: oklch(0.985 0.003 85);
+  --secondary: oklch(0.94 0.03 178);
+  --secondary-foreground: oklch(0.28 0.07 178);
+  --muted: oklch(0.955 0.008 75);
+  --muted-foreground: oklch(0.46 0.015 260);
+  --accent: oklch(0.88 0.08 48);
+  --accent-foreground: oklch(0.25 0.09 48);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.91 0.008 85);
+  --input: oklch(0.91 0.008 85);
+  --ring: oklch(0.45 0.12 178);
+  --wordmark-d-co: #0f6b63;
+  --wordmark-d-care: #2b2b2b;
+  --wordmark-d-tagline: #7fb7b2;
 }
 
-body {
-  background-color: #f9f9f9;
-  color: #1a1a1a;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+.dark {
+  --background: oklch(0.155 0.015 260);
+  --foreground: oklch(0.97 0.005 85);
+  --card: oklch(0.21 0.015 260);
+  --card-foreground: oklch(0.97 0.005 85);
+  --popover: oklch(0.21 0.015 260);
+  --popover-foreground: oklch(0.97 0.005 85);
+  --primary: oklch(0.65 0.14 178);
+  --primary-foreground: oklch(0.14 0.015 260);
+  --secondary: oklch(0.27 0.04 178);
+  --secondary-foreground: oklch(0.97 0.005 85);
+  --muted: oklch(0.27 0.01 260);
+  --muted-foreground: oklch(0.65 0.01 260);
+  --accent: oklch(0.28 0.03 55);
+  --accent-foreground: oklch(0.97 0.005 85);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.65 0.14 178);
 }
 
-.dark body {
-  background-color: #1a1a1a;
-  color: #f9f9f9;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    overscroll-behavior-y: none;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100svh;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-in-up {
+    animation: none;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.landing-typography {
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.landing-typography :where(h1) {
+  font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+  font-weight: 400 !important;
+}
+
+.landing-typography :where(h2, h3) {
+  font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+  font-weight: 500 !important;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
 }
