@@ -27,7 +27,7 @@ export function AnimatedSection({
   variant = "up",
   delay,
 }: AnimatedSectionProps) {
-  const { ref, inView } = useInView({ threshold: 0.08, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.03, triggerOnce: true });
 
   return (
     <div
