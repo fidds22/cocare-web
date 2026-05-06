@@ -6,6 +6,9 @@ import { locales } from "@/i18n/request";
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
+  display: "swap",
+  preload: true,
+  weight: ["300", "400", "600", "700"],
 });
 
 export function generateStaticParams() {
