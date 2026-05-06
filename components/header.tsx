@@ -47,21 +47,16 @@ export function Header() {
               {nextLocale.toUpperCase()}
             </Button>
           </Link>
-          <Link href="/login">
-            <Button variant="ghost" size="sm">
-              {t("login")}
-            </Button>
-          </Link>
-          <Link href="/login">
+          <a href="#waitlist">
             <Button size="default" className="shadow-sm">
-              {t("openApp")}
+              {t("joinWaitlist")}
             </Button>
-          </Link>
+          </a>
         </div>
 
-        <Link href="/login" className="justify-self-center md:hidden">
-          <Button size="sm">{t("openApp")}</Button>
-        </Link>
+        <a href="#waitlist" className="justify-self-center md:hidden">
+          <Button size="sm">{t("joinWaitlist")}</Button>
+        </a>
 
         <div className="justify-self-end md:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
@@ -91,15 +86,11 @@ export function Header() {
                     {t("switchTo", { locale: nextLocale.toUpperCase() })}
                   </Button>
                 </Link>
-                <Link href="/login" className="w-full">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="w-full justify-start font-normal text-muted-foreground hover:text-foreground"
-                  >
-                    {t("login")}
+                <a href="#waitlist" className="w-full" onClick={() => setOpen(false)}>
+                  <Button size="sm" className="w-full">
+                    {t("joinWaitlist")}
                   </Button>
-                </Link>
+                </a>
                 <div className="my-2 border-t" />
                 {SECTIONS.map(({ id, key }) => (
                   <button

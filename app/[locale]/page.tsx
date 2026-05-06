@@ -24,16 +24,17 @@ export default function Home() {
 
       <Hero />
 
-      <AnimatedSection id="problema">
+      <AnimatedSection id="problema" variant="up">
         <Problem />
       </AnimatedSection>
 
-      <AnimatedSection>
+      <AnimatedSection variant="up">
         <Solution />
       </AnimatedSection>
 
       <AnimatedSection
         id="como-funciona"
+        variant="up"
         className="flex min-h-[calc(100svh-4rem)] flex-col justify-center"
       >
         <AppPreview />
@@ -41,16 +42,23 @@ export default function Home() {
 
       <AnimatedSection
         id="funciones"
+        variant="up"
         className="flex min-h-[calc(100svh-4rem)] flex-col justify-center"
       >
         <Features />
       </AnimatedSection>
 
-      <Stats />
-      <PhotoBreak />
+      <AnimatedSection variant="fade">
+        <Stats />
+      </AnimatedSection>
+
+      <AnimatedSection variant="fade">
+        <PhotoBreak />
+      </AnimatedSection>
 
       <AnimatedSection
         id="testimonios"
+        variant="up"
         className="flex min-h-[calc(100svh-4rem)] flex-col justify-center"
       >
         <Testimonials />
@@ -58,6 +66,7 @@ export default function Home() {
 
       <AnimatedSection
         id="faq"
+        variant="up"
         className="flex min-h-[calc(100svh-4rem)] flex-col justify-center"
       >
         <Faq />
@@ -65,6 +74,7 @@ export default function Home() {
 
       <AnimatedSection
         id="waitlist"
+        variant="up"
         className="flex min-h-[calc(100svh-4rem)] flex-col justify-center"
       >
         <Cta />
