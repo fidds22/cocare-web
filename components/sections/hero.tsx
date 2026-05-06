@@ -45,7 +45,7 @@ export function Hero() {
           <div className="relative hidden lg:block">
             <div className="animate-fade-in-up animation-delay-300 aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&w=800&q=80"
+                src="https://images.pexels.com/photos/1648387/pexels-photo-1648387.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt={t("imageAlt")}
                 className="h-full w-full object-cover"
                 loading="eager"

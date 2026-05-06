@@ -2,15 +2,15 @@ import { useTranslations } from "next-intl";
 
 const photos = [
   {
-    src: "https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=600&h=400&q=80",
+    src: "https://images.pexels.com/photos/4473925/pexels-photo-4473925.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     key: "homework",
   },
   {
-    src: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&h=400&q=80",
+    src: "https://images.pexels.com/photos/3807571/pexels-photo-3807571.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     key: "grandparent",
   },
   {
-    src: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&h=400&q=80",
+    src: "https://images.pexels.com/photos/1250452/pexels-photo-1250452.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
     key: "family",
   },
 ] as const;
