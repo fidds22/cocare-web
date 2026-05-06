@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -44,14 +43,13 @@ export function Hero() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="animate-fade-in-up animation-delay-300 relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
-              <Image
+            <div className="animate-fade-in-up animation-delay-300 aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+              <img
                 src="https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&w=800&q=80"
                 alt={t("imageAlt")}
-                fill
-                priority
-                className="object-cover"
-                sizes="(min-width: 1024px) 50vw, 0vw"
+                className="h-full w-full object-cover"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const photos = [
@@ -23,13 +22,13 @@ export function PhotoBreak() {
     <section className="overflow-hidden" aria-label={t("aria")}>
       <div className="grid grid-cols-1 md:grid-cols-3">
         {photos.map((photo) => (
-          <div key={photo.key} className="relative aspect-[3/2]">
-            <Image
+          <div key={photo.key} className="aspect-[3/2] overflow-hidden">
+            <img
               src={photo.src}
               alt={t(`alts.${photo.key}`)}
-              fill
-              className="object-cover"
-              sizes="(min-width: 768px) 33vw, 100vw"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         ))}
